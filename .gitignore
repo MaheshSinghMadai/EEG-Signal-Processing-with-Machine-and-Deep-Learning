@@ -1,3 +1,4 @@
+*.pth
+
 # Ignore PyTorch Lightning logs
 lightning_logs/
-*.pth
