@@ -113,7 +113,7 @@ from src.models import EEGNet
 model = EEGNet(n_channels=64, n_classes=4)
 model.train(X_train, y_train, epochs=100, batch_size=32)
 ```
-
+<!--
 ## 📊 Results
 
 | Model | Accuracy | F1-Score |
@@ -123,7 +123,7 @@ model.train(X_train, y_train, epochs=100, batch_size=32)
 | CNN | 82.3% | 0.81 |
 | EEGNet | 85.7% | 0.84 |
 | LSTM | 80.1% | 0.79 |
-
+-->
 ## 📦 Dependencies
 
 - NumPy
