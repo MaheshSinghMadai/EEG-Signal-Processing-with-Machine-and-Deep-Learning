@@ -1,5 +1,131 @@
 # EEG Signal Processing with Machine and Deep Learning
 
+A curated repository of code, notebooks, and datasets for EEG preprocessing, feature extraction, and classification using classical machine learning and deep learning methods.
+
+**Project Summary**
+- **Scope:** Reproducible pipelines and reference notebooks for motor-imagery and epilepsy detection experiments.
+- **Tools:** Python, Jupyter, MATLAB (helper scripts), PyTorch/TensorFlow, MNE-Python.
+
+**Top-level Structure**
+- `EEG Datasets/` — Raw and converted EEG datasets (BCICIV_2a, EDF/GDF/CSV exports).
+- `EEG Matlab Dataset/` — MATLAB pipelines and helper functions.
+- `EEG Motor Imagery Classification/` — Notebooks demonstrating MI preprocessing and models (CNN, GRU, EEGNet, etc.).
+- `Epilepsy Classification/` — App, notebooks, model definitions, and example trained model (`epilepsy_classification_model.pth`).
+- `Papers/` — References used for experiments.
+- `requirements.txt` — Python dependencies.
+
+**Quick Start**
+1. Create and activate a virtual environment:
+
+```bash
+python -m venv venv
+# Windows PowerShell
+venv\Scripts\Activate.ps1
+# macOS / Linux
+source venv/bin/activate
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+**Run Examples**
+- Notebooks: open and run notebooks in `EEG Motor Imagery Classification/` to explore preprocessing, features, and model training.
+- Epilepsy demo app:
+
+```powershell
+python "Epilepsy Classification\app.py"
+```
+
+**Notes on Data**
+- Large raw files are stored under `EEG Datasets/`. Use the provided loading utilities in notebooks (MNE is recommended for EDF/GDF formats).
+- Do not commit large derived artifacts; store only processed subsets when necessary.
+
+**Important Files**
+- [Epilepsy Classification/app.py](Epilepsy Classification/app.py)
+- [Epilepsy Classification/epilepsy_classification_model.pth](Epilepsy Classification/epilepsy_classification_model.pth)
+- [requirements.txt](requirements.txt)
+
+**Contributing**
+- Fork, create a branch, add tests or a notebook demonstrating your change, and open a PR with a clear description.
+
+If you'd like, I can also add README badges, generate per-folder READMEs, or produce a short developer setup guide.
+# EEG Signal Processing with Machine and Deep Learning
+
+A curated collection of code, notebooks, and datasets for EEG signal processing, feature extraction, and classification using traditional machine learning and deep learning methods. This repository groups practical implementations and experiments for motor-imagery, epilepsy detection, and general EEG analysis.
+
+**Project At A Glance**
+- **Purpose:** Provide reproducible pipelines and reference notebooks for EEG preprocessing, feature engineering, and classification.
+- **Main languages/tools:** Python, MATLAB (helper scripts), Jupyter notebooks, PyTorch/TensorFlow (models), MNE-Python.
+- **Datasets included:** BCI Competition IV-2a, Bonn Epilepsy dataset excerpts, various EDF/GDF/CSV EEG files.
+
+**Repository Structure**
+- **EEG Datasets/**: Raw and converted datasets (BCICIV_2a, CSV exports, dataverse EDF files).
+- **EEG Matlab Dataset/**: MATLAB data, helper functions, and pipeline scripts.
+- **EEG Motor Imagery Classification/**: Jupyter notebooks exploring MI preprocessing and models (CNN, GRU, BiGRU, EEGNet variants).
+- **Epilepsy Classification/**: Application code, notebooks, trained model, and datasets for epilepsy detection. Key files:
+  - `Epilepsy Classification/app.py` – small app/demo script
+  - `Epilepsy Classification/model.py` – model definition
+  - `Epilepsy Classification/epilepsy_classification_model.pth` – example trained model
+- **Papers/**: References and literature used in experiments.
+- **requirements.txt**: Python dependencies for reproducible environment.
+
+**Quick Setup**
+1. Create and activate a virtual environment:
+
+```bash
+python -m venv venv
+# Windows PowerShell
+venv\Scripts\Activate.ps1
+# Windows (cmd)
+venv\\Scripts\\activate.bat
+# macOS / Linux
+source venv/bin/activate
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. (Optional) If you work with MATLAB code, open files under `EEG Matlab Dataset/Pipeline` in MATLAB.
+
+**How to Use**
+- Open and run notebooks under `EEG Motor Imagery Classification/` for exploratory experiments and model training examples.
+- For epilepsy detection demo, run the app script:
+
+```powershell
+python "Epilepsy Classification\app.py"
+```
+
+- To train or evaluate models, open the relevant notebook or `Epilepsy Classification/` scripts. Many notebooks include runnable cells for preprocessing, model training, and evaluation.
+
+**Datasets & Notes**
+- Raw data is kept under `EEG Datasets/`. Files may be large — do not commit large derived artifacts.
+- Some datasets (e.g., GDF/EDF) may require the `mne` package to read. See notebooks for dataset-specific loading utilities.
+
+**Key Files & Locations**
+- [Epilepsy Classification/app.py](Epilepsy Classification/app.py) – demo runner
+- [requirements.txt](requirements.txt) – dependency list
+- [EEG Motor Imagery Classification](EEG Motor Imagery Classification/) – notebooks collection
+
+**Contributing**
+- Fork, create a feature branch, add tests or a notebook demonstrating changes, and open a PR with a clear description.
+
+**Citation / Acknowledgements**
+- If you use this repo in research, please cite the datasets and relevant papers listed in `Papers/`.
+
+---
+
+If you want, I can also:
+- add badges (build / license),
+- generate a smaller README per subfolder (notebooks or epilepsy app), or
+- create a short contributor guide and a `requirements-dev.txt`.
+# EEG Signal Processing with Machine and Deep Learning
+
 A comprehensive implementation of EEG signal processing techniques combined with machine learning and deep learning models for brain-computer interface applications and neurological signal analysis.
 
 ## 📋 Overview
